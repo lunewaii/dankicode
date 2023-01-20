@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+.introducao {
+    color: rgb(198, 43, 226);
+    font-size: 18;
+    text-align: center;
+}
+
+@keyframes animation {
+    0% {background-color: rgb(255, 0, 0); width: 400px;}
+    50% {background-color: blueviolet; width: 300px;}
+    100% {background-color: rgb(231, 28, 147); width: 400px;}
+}
+
+.teste {
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    animation-name: animation;
+    animation-duration: 5s;
+}                                                                               

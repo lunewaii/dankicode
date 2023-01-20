@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>condições</title>
+    </head>
+    <body>
+        <p>condições são usadas para fazer alguma verificação no código</p>
+        <script>
+            var idade = 17
+            var nome = 'rebs'
+            var bestmain = 'dva'
+
+            if(idade == '18'){
+                console.log('idade maior que 18')
+            } else if (idade <= 12){
+                console.log ('idade menor que 12')
+            } else{
+                console.log('idade maior que 12')
+            }
+
+            if (idade == 18 || nome == 'rebs'){
+                console.log('nome é rebs ou idade é 17')
+            }
+
+            if (idade == 17 && nome == 'rebs'){
+                console.log('nome é rebs e idade é 17')
+            }
+
+            if (idade != 20){
+                console.log('idade não é 20')
+            }
+
+            if (idade == 17 || nome == 'rebs' || bestmain == 'dva'){
+                console.log('rebs, 17 anos, best main é a dva!')
+            }
+
+        </script>
+    </body>
+</html>

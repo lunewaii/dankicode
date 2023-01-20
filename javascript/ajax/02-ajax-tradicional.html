@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax tradicional</title>
+</head>
+<body>
+    <script>
+
+        setTimeout(() => {
+            var request = new XMLHttpRequest();
+            
+            request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+    
+            request.onload = function(){
+                if(this.status >= 200 && this.status < 400){
+                    //request feita com sucesso! esses números são dos códigos que posso ver em https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+                    var data = JSON.parse(this.response);
+                    console.log(data);
+                }else{
+                    console.log('a pagina ta off .-.');
+                }
+            }
+            
+            request.onerror = function(){
+    
+            }
+    
+            request.send();          
+        }, 2000);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock, paper, scisors!</title>
+</head>
+<body>
+
+    <h1>rock, paper, scisors!</h1>
+
+    <div class="align">
+        <div class="player1-opcoes">
+            <div><img opt="rock" src="rock.png"></div>
+            <div><img opt="paper" src="paper.png"></div>
+            <div><img opt="scisor" src="scisor.png"></div>
+        </div>
+    
+        <div class="player2-opcoes">
+            <div><img src="rock.png"></div>
+            <div><img src="paper.png"></div>
+            <div><img src="scisor.png"></div>
+        </div>
+    </div>
+
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+    }
+    .align{
+        display: flex;
+    }
+    .player1-opcoes,
+    .player2-opcoes{
+        width: 50%;
+        padding: 20px;
+    }
+    .player1-opcoes img,
+    .player2-opcoes img
+    {
+        max-width: 150px;
+        cursor: pointer;
+        opacity: 0.35;
+    }
+    </style>
+   
+    <script>
+        var elementos = document.querySelectorAll('.player1-opcoes div > img');
+        var playerOpt = "";
+
+        function resetarOpacidade(){
+            for(var i = 0; i < elementos.length; i++){
+            elementos[i].style.opacity = 0.35
+            }
+        }
+
+        for(var i = 0; i < elementos.length; i++){
+            elementos[i].addEventListener('click', function(t){
+                resetarOpacidade();
+                t.target.style.opacity = 1
+                playerOpt = t.target.getAttribute('opt');
+            });
+        }
+    </script>
+</body>
+</html>

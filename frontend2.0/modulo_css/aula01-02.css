@@ -1,0 +1,15 @@
+*{ /*esse * no início chama tudo*/
+    margin: 0;
+    padding: 40;
+    box-sizing: border-box;
+    /*é bom sempre colocar assim no início do código pra "resetar"
+    o que o navegador pode ter colocado como base*/
+
+}
+
+h3{ /*agora chamei só o h3 (estou estilizando só o h2*/
+    font-size: 20; /*tamanho da fonte*/
+    font-style: normal; /*italico, etc*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}

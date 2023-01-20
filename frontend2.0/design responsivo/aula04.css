@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrapper .img {
+    width: 25%;
+    outline: 2px solid #f34dca;
+    border-radius: 10px;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin: 8px 5px;
+    padding: 5px;
+}
+
+.wrapper .img img{ /*em cima eu tava editando a div e não as imagens em si*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*faz a imagem esticar pra caber na div*/
+}
+
+.banner {
+    text-align: center;
+    color: #f34dca;
+    background-color: #f34dca57;
+}
+
+footer {
+    text-align: center;
+    color: #f34dca;
+    background-color: #f34dca57;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.texto {
+    font-size: 18;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper .img {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper .img {
+        width: 50%;
+    }
+}

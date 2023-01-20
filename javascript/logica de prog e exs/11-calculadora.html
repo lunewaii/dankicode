@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculadora dinâmica</title>
+    </head>
+    <body>
+        <script>
+            var numeropri = prompt('primeiro numero');
+            while (isNaN(numeropri)){
+                alert('digita numero ne corno');
+                numeropri = prompt('primeiro numero');
+            }
+            
+            var sinal = prompt('sinal da operação (+, -, /, *)');
+            while(sinal != '+' && sinal != '-' && sinal != '/' && sinal != '*'){
+                alert('insira um sinal válido (+, -, /, *)')
+                sinal = prompt('sinal da operação (+, -, /, *)')
+            }
+            
+            var numerosec = prompt('segundo número');
+            while (isNaN(numerosec)){
+                alert('digita numero ne corno');
+                numerosec = prompt('segundo numero');
+            }
+
+            //convertendo string para número
+            numeropri = parseInt(numeropri);
+            numerosec = parseInt(numerosec);
+
+            var resultado = 0;
+
+            if(sinal == '+'){
+                resultado = numeropri + numerosec;
+            }else if (sinal == '-'){
+                resultado = numeropri - numerosec;
+            }else if (sinal == '*'){
+                resultado = numeropri * numerosec;
+            }else if (sinal == '/'){
+                resultado = numeropri / numerosec;
+            }
+
+            alert('o resultado é ' + resultado)
+
+        </script>
+    </body>
+</html>

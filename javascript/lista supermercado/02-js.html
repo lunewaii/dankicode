@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista supermercado</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: #C297B8;
+            text-align: center;
+            color: #070707;
+            padding: 40px;
+            font-size: larger;
+        }
+
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 5px;
+            padding: 0 30px;
+        }
+
+        .lista-cadastro input[type=text]{
+            border-radius: 4px;
+            flex: 1;
+            margin-right: 10px;
+            height: 30px;
+            padding-left: 5px;
+            font-size: 18px;
+        }
+
+        .lista-cadastro input[type=submit]{
+            border-radius: 4px;
+            flex: 0.2;
+            background-color: #FDCFF3;
+            color: #40434E;
+            font-size: 16px;
+            
+        }
+
+        .lista-produtos-single{
+            padding: 15px;
+            border-bottom: 1px solid #40434E;
+            display: flex;
+            font-size: 17px;
+            margin: 12px 0;
+            color: #070707;
+        }
+
+        .lista-produtos-single h3{
+            flex: 1;
+            color: #070707;
+        }
+
+        h3.price-produto{
+            text-align: right;
+            font-size: 16px;
+        }
+        
+        h3.price-produto > span{
+            background-color: #86BBD8;
+            border-radius: 20px;
+            padding: 8px 10px;
+        }
+
+        .soma-produto{
+            color: #070707;
+            margin: 12px;
+            font-size: 13px;
+            position: absolute;
+            bottom: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Lista de Mercado - App</h2>
+    </header>
+
+    <div class="lista-cadastro">
+        <input type="text" placeholder="Nome do produto"
+        name="nome_produto"/>
+        <input type="text" placeholder="Valor do produto"
+        name="valor_produto"/>
+        <input type="submit" name="ação" value="Cadastrar"/>
+    </div>
+
+    <div class="lista-produtos">
+        <div class="lista-produtos-single">
+            <h3>Mulangos</h3>
+            <h3 class="price-produto"><span>R$5,00</span></h3> 
+        </div>
+        <div class="lista-produtos-single">
+            <h3>Mulangos</h3>
+            <h3 class="price-produto"><span>R$5,00</span></h3> 
+        </div> 
+        <div class="lista-produtos-single">
+            <h3>Mulangos</h3>
+            <h3 class="price-produto"><span>R$5,00</span></h3> 
+        </div> 
+        <div class="lista-produtos-single">
+            <h3>Mulangos</h3>
+            <h3 class="price-produto"><span>R$5,00</span></h3> 
+        </div> 
+        <div class="lista-produtos-single">
+            <h3>Mulangos</h3>
+            <h3 class="price-produto"><span>R$5,00</span></h3> 
+        </div> 
+        </div>
+    </div>
+
+    <div class="soma-produto">
+        <h1>Total: R$30,00</h1>
+    </div>
+
+    <script>
+
+        var itens = [];
+
+        document.querySelector('input[type=submit]').addEventListener('click', ()=>{{
+            var nomeProduto = document.querySelector('input[name=nome_produto]').value; //por que o .value?
+            var precoProduto = document.querySelector('input[name=valor_produto]').value;
+
+            itens.push({
+                nome: nomeProduto,
+                valor: precoProduto
+            });
+
+            console.log(itens[0].nome); //ihu!
+        }})
+
+    </script>
+
+</body>
+</html>

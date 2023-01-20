@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest e spread</title>
+</head>
+<body>
+    <script>
+        //spread: basicamente pegou tudo que tava dentro da variavel mains e colocou em obj
+        //spread espalha O.o
+        // var mains = [
+        //     {
+        //         main: 'reyna'
+        //     },
+        //     {
+        //         main: 'viper'
+        //     }
+        // ];
+
+        // const obj = [...mains, {
+        //     main: 'dva'
+        // }];
+
+        // console.log(objetos);
+
+
+        //rest:
+        function coisas(mainVav, ...mainOw){ //quando coloca ... ele vê como uma array
+            console.log(mainVav);
+            console.log(mainOw);
+        }
+
+        coisas('reyna', 'dva');
+        // coisas(['dva', 'reinhardt'], ['reyna', 'viper', 'killjoy']); - tento depois
+
+    </script>
+</body>
+</html>

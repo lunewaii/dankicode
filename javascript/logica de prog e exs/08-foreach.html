@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ForEach</title>
+</head>
+
+<body>
+    <p>ForEach</p>
+    <p>serve para interagir em uma array ou em objetos</p>
+    <p>no formato mains.forEach(function (1 e 2)), 1 = value, 2 = index</p>
+    <p>value -> fala quais objetos tem la</p>
+    <p>index -> fala quantos objetos tem la</p>
+    <script>
+        var mains = ['dva', 'reyna', 'viper']
+        /*forma manual de mostrar todas as variáveis em mains:
+        for (var i = 0; i < mains.length; i++){
+            console.log(mains[i]);
+        }*/
+
+        //com ForEach
+        mains.forEach(function(value, index){
+            console.log(index)
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>praticando objetos</title>
+    </head>
+    <body>
+        <p>praticando orientação a objetos</p>
+        <script>
+            function mains(){
+                this.overwatch = "dva";
+                this.valorant = "viper";
+                this.valorant_main = function(){  //objeto pode também ser uma função!
+                    console.log(this.valorant);
+                }
+            }
+
+            var main_ow = new mains();
+            var main_valo = new mains();
+
+            /*main_valo.valorant = 'reyna';*/
+
+            console.log(main_ow.overwatch); //sem o .overwatch aparece todos os mains
+            main_valo.valorant_main(); //chamando a função
+            
+            //também posso chamar de uma forma mais fácil:
+            function pet(nome, cor){
+                if(nome == undefined){
+                    nome = 'o nome não foi definido!'
+                }
+                if(cor == undefined){
+                    cor = 'a cor não foi definida!'
+                }
+                this.nome = nome;
+                this.cor = cor;
+            }
+            //assim, não têm uma forma predefinida e tenho um trabalho menor
+
+            pet1 = new pet('stormy', 'branco');
+            pet2 = new pet('cloudy', 'cinza');
+            pet3 = new pet('sunny', 'amarelo');
+            pet4 = new pet();
+
+            console.log(pet1.nome + ', ' + pet1.cor);
+            console.log(pet4.nome);
+
+            /*        
+        //como passar um objeto como parâmetro...?
+        function Pessoa(){
+            this.nome = 'rebeca';
+            this.idade = 16;
+            this.returnPet = function(pet){
+                return pet;
+            }
+        }
+
+        function Pet(){
+            this.nome = 'stormy'
+            this.cor = 'banco'
+        }
+
+        var pessoa = new Pessoa();
+        var pet = new Pet();
+
+        console.log(pessoa.returnPet(pet).nome);*/
+
+        </script>
+    </body>
+</html>

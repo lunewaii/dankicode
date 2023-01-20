@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando prompt de comando</title>
+</head>
+<body>
+    <p>toString transforma em uma string, faz com que o objeto apareça impresso. É uma função das arrays (tem várias outras pra explorar!)</p>
+    <script>
+        var mainow = prompt('qual seu main no overwatch?');
+        var mainval1 = prompt('qual seu main principal no valorant?');
+        var mainval2 = prompt('qual seu main secundário no valorant?');
+        var mains = [mainow, mainval1, mainval2];
+
+        console.log('o main no overwatch é ' + mainow);
+        console.log('o main principal no valorant é ' + mainval1);
+        console.log('o main secundário no valorant é ' + mainval2);
+        console.log('os mains são: ', mains.toString());
+        /* forma que fiz primeiro que deu errado, porque saiu uma em cada linha!
+        mains.forEach(function(value){
+            console.log('os mais são: ' + value)
+        })*/
+    </script>
+</body>
+</html>

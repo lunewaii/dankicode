@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mais animações no js</title>
+</head>
+
+<body>
+    <style>
+        .conteudo h2 span {
+            font-size: 20px;
+            cursor: pointer;
+            color: #f34dca;
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            height: 0px;
+            transition: 3s;
+        }
+
+        .mostrar {
+            height: 200px !important;
+        }
+    </style>
+    <div class="conteudo">
+        <h2>sobre hanna song... <span>ver mais!</span></h2>
+        <p>D.Va é uma ex-gamer profissional que sabe como usar suas habilidades para pilotar um mecha de última
+            geração na defesa de sua cidade natal.
+            Vinte anos atrás, a Coréia do Sul foi atacada por um ômnico monstruoso que surgiu das profundezas
+            Mar da China Oriental. O construto enorme causou danos catastróficos às cidades costais antes de
+            ser forçado a recuar para debaixo das ondas. Em resposta, o governo da Coréia do Sul desenvolveu
+            uma unidade drone blindada e mecanizada, chamada de MEKA, para proteger ambientes urbanos em
+            combates futuros com a ameaça ômnica.
+            Os medos do governo se mostraram bem fundados à medida que um padrão de ataques perturbador surgiu.
+            A cada determinado número de anos, a monstruosidade se levantava do mar para atacar a Coréia do Sul
+            e seus vizinhos. O ômnico aprendia com cada ataque, sempre se reconfigurando em uma forma diferente
+            e aparecendo com novas armas e funcionalidades. Cada incidente terminava em um impasse, com a
+            monstruosidade derrotada, porém não destruída.
+            Com o ômnico sempre se adaptando, ele eventualmente conseguiu interferir com o controle de drones
+            da rede MEKA, forçando os militares a colocarem pilotos nos mechas. Com dificuldades para achar
+            candidatos apropriados, o governo recorreu aos jogadores de videogames profissionais, que tinham os
+            reflexos e instintos necessários para operar os sistemas avançados das armas dos mechas. Os
+            melhores foram selecionados, incluindo a campeã mundial, Hana Song, conhecida também como "D.Va".
+            Famosa por suas habilidades de elite, D.Va era uma competidora feroz, que jogava para vencer a
+            qualquer custo, e tinha a reputação bem fundamentada de não mostrar misericórdia por seus oponentes.
+            Vendo sua nova missão como um jogo, D.Va avança ferozmente em batalha junto com o resto de sua
+            unidade MEKA, pronta para agir em defesa de sua nação a qualquer momento. Recentemente, ela
+            começou a fazer streams de suas operações de combate para seus adorados fãs e o crescimento de
+            seus seguidores a transformou em um ícone global.</p>
+    </div>
+    <script>
+        var span = document.querySelector('.conteudo span');
+        //function(){} é a meixma coisa que () => {}
+        span.addEventListener('click', function () {
+            var conteudo = document.querySelector('.conteudo p');
+
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'ver mais! :D';
+                conteudo.classList.remove('mostrar');
+            }else{
+                span.innerHTML = 'ver menos :c';
+                conteudo.classList.add('mostrar');
+            }
+        });
+    </script>
+</body>
+
+</html>

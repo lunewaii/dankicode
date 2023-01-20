@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>functions</title>
+</head>
+
+<body>
+    <p>sobre functions...</p>
+    <p>sáo trechos de códigos que podemos chamar a qualquer momento</p>
+    <p>return serve só para retornar algo. quando retorna ele acaba, ou seja, tudo depois do return é descartado</p>
+    <p>tem como chamar a funcao logo depois de criar ela, mas depois disso ela vai ser descartada</p>
+    <script>
+        function teste() {
+            console.log('executado quando a funcao é chamada');
+        }
+        /*teste(); - assim que chama a funcao*/
+
+        function teste2(nome, idade) { //parametros
+            console.log('o nome é ' + nome);
+            console.log('a idade é ' + idade);
+        }
+        /*teste2('rebeca', 16); - chama assim*/
+
+        function retornaNome() {
+            return ('rebeca');
+        }
+        var nome = retornaNome();
+        console.log(nome);
+
+        function pegarNumero(parametro){
+            if(parametro == 1){
+                return 'parametro é igual a 1';
+            }else if(parametro == 2){
+                return 'parametro é igual a 2';
+            }else{
+                return 'parametro não é 1 ou 2';
+            }
+        }
+
+        var parametro = pegarNumero(2314);
+        console.log(parametro);
+
+        var nome = function() {
+            console.log ('é usado pra poder mudar o valor que ta na funcao');
+        }
+
+        nome();
+
+        (function(){
+            console.log('chamando uma funcao logo depois que ela aparece')
+        })();
+
+    </script>
+</body>
+
+</html>

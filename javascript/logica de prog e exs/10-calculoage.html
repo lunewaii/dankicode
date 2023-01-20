@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exercício 2</title>
+    </head>
+    <body>
+        <p>calculo de idade</p>
+        <script>
+            var anoNasc = prompt('digite o ano que tu nasceu');
+            var anoAtu = prompt('digite o ano atual');
+            while(anoNasc >= 2020 || isNaN(anoNasc) || isNaN(anoAtu)){
+                alert('por favor, digite sua data de nascimento direito po');
+                anoNasc = prompt('digite o ano que tu nasceu');
+                anoAtu = prompt('digite o ano atual');
+            }
+
+            var idadeAtual = anoAtu - anoNasc;
+            alert('a sua idade atualmente é ' + idadeAtual);
+        </script>
+    </body>
+</html>

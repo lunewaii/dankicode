@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inicio {
+    color: #f34dca;
+    text-align: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    background: #892be2b6;
+}
+
+@media screen and (max-width: 900px) {
+    .box {
+        width: 100%;
+        max-width: 100%;
+        /*se nao tiver isso, o opera nao pega*/
+        background: #f34dca;
+    }
+}

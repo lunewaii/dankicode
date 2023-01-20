@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>classes 1</title>
+    </head>
+    
+    <body>
+        <script>
+            //basicamente aula anterior, de orientação a objetos, mas de uma forma mais certa, sem gambiarra
+            class Mains{
+                constructor(ow, val){ //toda vez que criamos a classe, passamos um parâmetro. função fica mais fácil também
+                    this.ow = ow;
+                    this.val = val;
+                }
+
+                retornaNome(){
+                    return this.ow;
+                }
+
+            }
+
+            var mains1 = new Mains('dva', 'viper');
+            var mains2 = new Mains('widowmaker', 'reyna');
+
+            console.log(mains2.retornaNome());//ele só sabe que é uma função se eu colocar o (). não posso chamar a classe, tenho 
+            //que chamar a VARIÁVEL. o valor muda se a variável mudar!!!
+
+        </script>
+    </body>
+</html>

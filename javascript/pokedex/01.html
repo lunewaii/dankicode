@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+</head>
+<body>
+    <div class="main">
+        <h2>pokedex</h2>
+        <div class="pokemon-boxes">
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+            <div class="pokemon-box">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
+                <p>Gengar</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #8de4dc;
+        }
+
+        .main{
+            background-color: azure;
+            margin: 20px auto;
+            max-width: 1050px;
+            padding: 20px 2%;
+        }
+
+        .main h2{
+            text-align: center;
+            color: #c50505;
+            font-size: 40px;
+        }
+
+        .pokemon-boxes{
+            display: flex;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .pokemon-box{
+            width: 29.3%;
+            margin: 0 2% 3%;
+            background-color: rgb(209, 206, 206);
+            border-radius: 20px;
+        }
+
+        .pokemon-box img{
+            width: 100%;
+        }
+
+        .pokemon-box p{
+            color: black;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:768px) {
+            .pokemon-box{width: 100%; text-align: center;}
+            .pokemon-box img{max-width: 60%;}
+        }
+    </style>
+
+    <script>
+        fetch('https://pokeapi.co/api/v2/pokemon?offset=10&limit=10')
+        .then(response => response.json())
+        .then(allPokemon => console.log(allPokemon));
+    </script>
+
+</body>
+</html>

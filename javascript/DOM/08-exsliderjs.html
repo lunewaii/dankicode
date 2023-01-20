@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider (vanilla)</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+        }
+        .tudo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container{
+            position: relative;
+            margin: 0 auto;  /*alinhou horizontalmente! */
+            height: 500px;
+            width: 500px;
+        }
+
+        .container img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .bullets{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .bullet-single{
+            margin: 0 8px;
+            cursor: pointer;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #f34cba;
+        }
+
+        .active-bullet{
+            background-color: #000;
+        }
+    </style>
+
+    <div class="tudo">
+        <div class="container">
+            <img style="opacity: 1;" src="cat dva.jpg"/>
+            <img src="gaming.jpg"/>
+            <img src="tomori.jpg"/>
+        </div>
+    
+        <div class="bullets">
+            <div class="bullet-single active-bullet"></div>
+            <div class="bullet-single"></div>
+            <div class="bullet-single"></div>
+        </div>
+    </div>
+
+    <script>
+        var images = document.querySelectorAll('.container img');
+        var lastIndex = 0;
+        
+        images.forEach((item, index) => {
+            console.log(document.querySelectorAll('.bullet-single')[index]);
+            document.querySelectorAll('.bullet-single')[index]
+            .addEventListener('click', () => {
+                let lastImage = document.querySelectorAll('.container img')[lastIndex];
+                let actualImage = document.querySelectorAll('.container img')[index];
+                //agora, resetar as bullets e setar a nova
+                
+                document.querySelectorAll('.bullet-single')[lastIndex]
+                .classList.remove('active-bullet');
+
+                document.querySelectorAll('.bullet-single')[index]
+                .classList.add('active-bullet');
+                
+                lastImage.style.opacity = 0;
+                actualImage.style.opacity = 1;
+                lastIndex = index;
+            });
+        });
+    </script>
+</body>
+</html>

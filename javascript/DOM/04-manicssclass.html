@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulando por classes</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+
+        var elementos = document.getElementsByClassName('box');
+
+        for(var i = 0; i < elementos.length; i++){
+            var el = elementos[i]
+    
+            el.style.height = '100px';
+            el.style.width = '100px';
+            el.style.backgroundColor = 'pink';
+            el.style.margin = '50px';
+            el.style.marginBottom = '50px';
+            el.style.borderWidth = '3px';
+            el.style.borderColor = 'black';
+            el.style.borderStyle = 'dotted'; //solid fica contínuo, dotted é pontilhadinho!!!
+            el.style.borderRadius = '10px';
+        }
+
+    </script>
+</body>
+
+</html>

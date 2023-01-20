@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap; /*precisa pra conseguir mudar a porcentagem e disposição no celular*/
+    background: #ed45f385;
+}
+
+.w50{
+    width: 50%;
+    padding-left: 50px;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.menu{
+    text-align: end;
+    width: 50%;
+    padding-top: 10px;
+}
+
+section.banner{ /*é section.banner porque pode ter varias outras coisas com essa classe, ai especifica*/
+    width: 100%;
+    min-height: 230px;
+    background: #a74ec27a;
+    text-align: center;
+    color: white;
+    padding: 90px 0;
+}
+
+section.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.w33{
+    width: 33.33%;
+    padding: 0 10px;
+    text-align: center;
+    font-family: 'Arima', cursive;
+    font-weight: bolder;
+}
+
+footer{
+    position: fixed; /*pra nao mexer*/
+    width: 100%;
+    text-align: center;
+    bottom: 0; /*faz ele ficar lá embaixo*/
+    background: #ed45f385;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        text-align: center;
+    }
+
+    .menu{
+        text-align: center;
+    }
+
+    .w33, .w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

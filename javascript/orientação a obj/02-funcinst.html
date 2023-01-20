@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>funções e instâncias</title>
+    </head>
+    <body>
+        <p>funções e instâncias</p>
+        <script>
+            function People(){
+                this.nome = 'rebeca'; //diz o valor que vai ser os objetos por padrão
+            }
+
+            var people = new People(); //diz que estamos criando um objeto chamado Pessoa
+            var people2 = new People(); //cria outro objeto
+
+            people.nome = 'posso mudar o valor'
+
+            console.log(people.nome);
+            console.log(people2.nome); //aqui vai aparecer o nome padrão, porque somento o valor de people foi alterado
+        </script>
+    </body>
+
+</html>
