@@ -3,4 +3,20 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.center{
+    display: flex;
+    margin: o auto;
+    max-width: 1100px;
+    padding: 0 2%;
+}
+
+section.main{
+    background-image: url('images/bg-grey.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px 0 80px 0;
 }
