@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
     color: white;
 }
 
@@ -29,8 +28,12 @@ section.main{
 
 .logo-menu img{
     width: 50px;
+    user-select: none;
 }
 
 .logo-menu h3{
-    
+    cursor: default;
+    user-select: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
 }
