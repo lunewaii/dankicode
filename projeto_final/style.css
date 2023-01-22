@@ -41,7 +41,7 @@ section.main{
     user-select: none;
 }
 
-.logo-menu h3{
+.logo-menu h1{
     cursor: default;
     user-select: none;
     font-family: 'EB Garamond', serif;
@@ -55,6 +55,7 @@ section.main{
 }
 
 .items-menu a{
+    font-size: 18px;
     text-decoration: none;
     display: inline-block;
     margin: 0 2%;
@@ -95,10 +96,66 @@ section.main{
 }
 
 section.brands{
-    padding: 30px 0;
+    padding: 10px 0;
     /* background-color: red; */
 }
 
 section.brands img{
     width: 15%;
+}
+
+section.porques{
+    padding: 40px 0;
+    background-color: #766B6E;
+}
+
+section.porques img{
+    max-width: 45px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+}
+
+section.porques > .inner > h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+section.porques > .inner > p{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.diferenciais{
+    display: flex;
+}
+
+.box-diferenciais{
+    border-radius: 10px;
+    background-color: #FFD046;
+    box-shadow: 0px 20px 40px #2426721C;
+    height: 300px;
+    width: 33%;
+    margin: 2%;
+    padding: 3%;
+}
+
+.imgetxt{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.box-diferenciais h3{
+    margin-left: 4%;
+    color: black;
+    font-size: 25px;
+}
+
+.box-diferenciais p{
+    margin-top: 5%;
+    color: #766B6E;
+    font-size: 18px;
 }
