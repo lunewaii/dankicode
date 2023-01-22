@@ -73,3 +73,22 @@ section.main{
 .items-menu a.contact-btn:hover{
     border: 0;
 }
+
+.mockup{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.mockup h1{
+    font-size: 40px;
+}
+
+.mockup p{
+    font-size: 20px;
+}
+
+.mockup img{
+    max-width: 100%;
+}
