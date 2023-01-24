@@ -159,3 +159,27 @@ section.porques > .inner > p{
     color: #766B6E;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.brands{
+        padding: 2%;
+        text-align: center;
+    }
+
+    section.brands img{
+        width: 20%;
+    }
+
+    .mockup img{
+        max-width: 80%;
+    }
+}
