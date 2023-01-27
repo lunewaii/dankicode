@@ -281,4 +281,20 @@ section.benefits{
     .items-menu a.contact-btn{
         margin-top: 5%;
     }
+
+    section.benefits{
+        display: grid;
+        /* text-align: center; */
+    }
+
+    .left{
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .right{
+        width: 100%;
+        /* background-color: blue; */
+        text-align: center;
+    }
 }
