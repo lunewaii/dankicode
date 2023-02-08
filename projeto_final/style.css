@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: white;
 }
 
-.inner{
+.inner {
     display: flex;
     margin: o auto;
     width: 100%;
@@ -14,7 +14,7 @@
     justify-content: space-evenly;
 }
 
-section.main{
+section.main {
     background-image: url('images/bg-grey.jpg');
     background-position: center;
     background-size: cover;
@@ -22,7 +22,7 @@ section.main{
     padding: 20px 0 80px 0;
 }
 
-.menu{
+.menu {
     display: flex;
     width: 100%;
     align-items: center;
@@ -30,109 +30,109 @@ section.main{
     /* background: green; */
 }
 
-.logo-menu{
+.logo-menu {
     display: flex;
     align-items: center;
     width: 50%;
 }
 
-.logo-menu img{
+.logo-menu img {
     width: 50px;
     user-select: none;
 }
 
-.logo-menu h1{
+.logo-menu h1 {
     cursor: default;
     user-select: none;
     font-family: 'EB Garamond', serif;
     font-size: 30px;
 }
 
-.items-menu{
+.items-menu {
     /* background: red; */
     width: 50%;
     text-align: right;
 }
 
-.items-menu a{
+.items-menu a {
     font-size: 18px;
     text-decoration: none;
     display: inline-block;
     margin: 0 2%;
 }
 
-.items-menu a:hover{
+.items-menu a:hover {
     border-bottom: 2px solid #FFD046;
 }
 
-.items-menu a.contact-btn{
+.items-menu a.contact-btn {
     background-color: #72D6CA;
     padding: 10px 10px;
     border-radius: 10px;
     color: #766B6E;
 }
 
-.items-menu a.contact-btn:hover{
+.items-menu a.contact-btn:hover {
     border: 0;
 }
 
-.mockup{
+.mockup {
     display: block;
     width: 100%;
     text-align: center;
     padding-top: 2%;
 }
 
-.mockup h1{
+.mockup h1 {
     font-size: 40px;
 }
 
-.mockup p{
+.mockup p {
     font-size: 20px;
 }
 
-.mockup img{
+.mockup img {
     max-width: 50%;
 }
 
-section.brands{
+section.brands {
     padding: 10px 0;
     /* background-color: red; */
 }
 
-section.brands img{
+section.brands img {
     width: 15%;
 }
 
-section.porques{
+section.porques {
     padding: 40px 0;
     background-color: #766B6E;
 }
 
-section.porques img{
+section.porques img {
     max-width: 45px;
     max-height: 45px;
     width: auto;
     height: auto;
 }
 
-section.porques > .inner > h2{
+section.porques>.inner>h2 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 2%;
 }
 
-section.porques > .inner > p{
+section.porques>.inner>p {
     width: 100%;
     font-size: 20px;
     text-align: center;
 }
 
-.diferenciais{
+.diferenciais {
     display: flex;
 }
 
-.box-diferenciais{
+.box-diferenciais {
     border-radius: 10px;
     background-color: #FFD046;
     box-shadow: 0px 20px 40px #2426721C;
@@ -142,25 +142,25 @@ section.porques > .inner > p{
     padding: 2%;
 }
 
-.imgetxt{
+.imgetxt {
     display: flex;
     align-items: center;
     margin-left: 2%;
 }
 
-.box-diferenciais h3{
+.box-diferenciais h3 {
     margin-left: 4%;
     color: black;
     font-size: 25px;
 }
 
-.box-diferenciais p{
+.box-diferenciais p {
     margin-top: 5%;
     color: #766B6E;
     font-size: 18px;
 }
 
-section.start{
+section.start {
     background-image: url('images/bg-grey.jpg');
     background-position: center;
     padding: 20px 10px;
@@ -168,18 +168,18 @@ section.start{
     text-align: center;
 }
 
-section.start h2{
+section.start h2 {
     margin: 2%;
     font-size: 50px;
 }
 
-section.start h4{
+section.start h4 {
     margin: 2%;
     font-size: 20px;
     margin-bottom: 4%;
 }
 
-section.start a{
+section.start a {
     background-color: #72D6CA;
     padding: 10px 10px;
     border-radius: 10px;
@@ -187,7 +187,7 @@ section.start a{
     text-decoration: none;
 }
 
-section.benefits{
+section.benefits {
     display: flex;
     width: 100%;
     padding: 40px 0;
@@ -195,18 +195,18 @@ section.benefits{
     align-items: center;
 }
 
-.left{
+.left {
     width: 50%;
     padding: 2%;
 }
 
-.left h1{
+.left h1 {
     font-size: 50px;
     margin-bottom: 5%;
     margin-left: 20%;
 }
 
-.left a{
+.left a {
     background-color: #72D6CA;
     padding: 18px;
     border-radius: 10px;
@@ -214,24 +214,24 @@ section.benefits{
     text-decoration: none;
 }
 
-.btn{
+.btn {
     padding: 2%;
     display: flex;
     justify-content: center;
 }
 
-.imgtxt2{
+.imgtxt2 {
     display: flex;
     padding: 2%;
     align-items: center;
 }
 
-.imgtxt2 p{
+.imgtxt2 p {
     font-size: 20px;
     padding: 1%;
 }
 
-.imgtxt2 img{
+.imgtxt2 img {
     max-width: 30px;
     max-height: 30px;
     width: auto;
@@ -239,60 +239,115 @@ section.benefits{
     margin-left: 10%;
 }
 
-.right{
+.right {
     width: 50%;
 }
 
-.right img{
+.right img {
     max-width: 80%;
     max-height: 80%;
     width: auto;
     height: auto;
 }
 
+section.depoiments {
+    /* background-color: red; */
+    display: flexbox;
+}
+
+.th1 h1{
+    width: 100%;
+    /* background-color: blue; */
+    color: #000;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.box{
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+}
+
+.box img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.bullets{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bullet-single{
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f34cba;
+}
+
+.active-bullet{
+    background-color: #000;
+}
 
 
 @media screen and (max-width: 800px) {
-    .diferenciais{
+    .diferenciais {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
     }
 
-    .box-diferenciais{
+    .box-diferenciais {
         width: 80%;
         margin-right: 0;
         height: 20%;
     }
 
-    section.brands{
+    section.brands {
         padding: 2%;
         text-align: center;
     }
 
-    section.brands img{
+    section.brands img {
         width: 30%;
     }
 
-    .mockup img{
+    .mockup img {
         max-width: 80%;
     }
 
-    .items-menu a.contact-btn{
+    .items-menu a.contact-btn {
         margin-top: 5%;
     }
 
-    section.benefits{
+    section.benefits {
         display: grid;
         /* text-align: center; */
     }
 
-    .left{
+    .left {
         width: 100%;
         /* background-color: red; */
     }
 
-    .right{
+    .right {
         width: 100%;
         /* background-color: blue; */
         text-align: center;
