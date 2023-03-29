@@ -119,7 +119,7 @@
             <h1>Depoimentos</h1>
         </div>
         <div class="boxes">
-            <div class="box" style="opacity: 1">
+            <div class="box" style="display: block">
                 <img src="images/DEPOIMENTO1.png" />
                 <h2>Miriam Souza</h2>
                 <h3>Uber</h3>
@@ -156,8 +156,8 @@
         images.forEach((item, index) => {
             console.log(document.querySelectorAll('.bullet-single')[index]);
             document.querySelectorAll('.bullet-single')[index].addEventListener('click', () => {
-                let lastImage = document.querySelectorAll('.box img')[lastIndex];
-                let actualImage = document.querySelectorAll('.box img')[index];
+                let lastImage = document.querySelectorAll('.box')[lastIndex];
+                let actualImage = document.querySelectorAll('.box')[index];
                 //agora, resetar as bullets e setar a nova
                 
                 document.querySelectorAll('.bullet-single')[lastIndex]
@@ -166,8 +166,8 @@
                 document.querySelectorAll('.bullet-single')[index]
                 .classList.add('active-bullet');
                 
-                lastImage.style.opacity = 0;
-                actualImage.style.opacity = 1;
+                lastImage.style.display = "none";
+                actualImage.style.display = "block";
                 lastIndex = index; 
             });
         });
