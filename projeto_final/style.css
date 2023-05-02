@@ -265,17 +265,17 @@ section.depoiments {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     flex-direction: column;
 }
 
 .box{
-    display: none;
-    position: relative;
+    /* display: none;
+    position: relative; */
     margin: 0 auto;
-    height: 500px;
-    width: 500px;
+    height: 40%;
+    width: 40%;
     align-items: center;
     text-align: center;
     background-color: #000;
