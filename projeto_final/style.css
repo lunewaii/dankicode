@@ -270,23 +270,70 @@ section.depoiments {
     flex-direction: column;
 }
 
-.box{
+/* .box{
     /* display: none;
-    position: relative; */
+    position: relative; *
     margin: 0 auto;
     height: 40%;
     width: 40%;
     align-items: center;
     text-align: center;
     background-color: #000;
-}
+} */
 
-.box img{
+/* .box img{
     left: 0;
     top: 0;
     width: 30%;
     height: 30%;
-    /* transition: 3s; - ver por que nao funciona */
+    /* transition: 3s; - ver por que nao funciona *
+} */
+
+/* .bullets{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bullet-single{
+    margin: 0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #f34cba;
+}
+
+.active-bullet{
+    background-color: #000;
+} */
+
+
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;  /*alinhou horizontalmente! */
+    height: 500px;
+    width: 500px;
+}
+
+.container img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
 }
 
 .bullets{
@@ -306,7 +353,6 @@ section.depoiments {
 
 .active-bullet{
     background-color: #000;
-}
 
 
 @media screen and (max-width: 800px) {
