@@ -121,9 +121,27 @@
         <div class="boxes">
             <div class="tudo">
                 <div class="container">
-                    <img style="opacity: 1;" src="images/cat dva.jpg"/>
-                    <img src="images/gaming.jpg"/>
-                    <img src="images/tomori.jpg"/>
+                    <div class="deps" style="opacity: 1;">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h2>Miriam Souza</h2>
+                        <h3>Uber</h3>
+                        <p>foi bom hein</p>
+                        <img src="images/5stars.svg" />
+                    </div>
+                    <div class="deps">
+                        <img src="images/DEPOIMENTO2.png" />
+                        <h2>Lucas Mendes</h2>
+                        <h3>Uber</h3>
+                        <p>foi bom hein</p>
+                        <img src="images/5stars.svg" />
+                    </div>
+                    <div class="deps">
+                        <img src="images/DEPOIMENTO3.png" />
+                        <h2>Zaya Menphis</h2>
+                        <h3>Uber</h3>
+                        <p>foi bom hein</p>
+                        <img src="images/5stars.svg" />
+                    </div>
                 </div>
             
                 <div class="bullets">
@@ -166,17 +184,16 @@
         </div> -->
     </section>
 
-    <!-- script teste -->
     <script>
-        var images = document.querySelectorAll('.container img');
+        var deps = document.querySelectorAll('.container .deps');
         var lastIndex = 0;
         
-        images.forEach((item, index) => {
+        deps.forEach((item, index) => {
             console.log(document.querySelectorAll('.bullet-single')[index]);
             document.querySelectorAll('.bullet-single')[index]
             .addEventListener('click', () => {
-                let lastImage = document.querySelectorAll('.container img')[lastIndex];
-                let actualImage = document.querySelectorAll('.container img')[index];
+                let lastImage = document.querySelectorAll('.container .deps')[lastIndex];
+                let actualImage = document.querySelectorAll('.container .deps')[index];
                 //agora, resetar as bullets e setar a nova
                 
                 document.querySelectorAll('.bullet-single')[lastIndex]

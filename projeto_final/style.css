@@ -326,7 +326,7 @@ section.depoiments {
     width: 500px;
 }
 
-.container img{
+.container .deps{
     position: absolute;
     left: 0;
     top: 0;
