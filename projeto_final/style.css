@@ -348,11 +348,11 @@ section.depoiments {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: #f34cba;
+    background-color: #766B6E;
 }
 
 .active-bullet{
-    background-color: #000;
+    background-color: #72D6CA;
 }
 
 @media screen and (max-width: 800px) {
