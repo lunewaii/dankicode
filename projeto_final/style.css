@@ -342,12 +342,14 @@ section.depoiments {
     background-color: black;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
 }
 
 .pfp{
     /* padding: 10%; */
     min-width: 30%;
     min-height: 30%;
+    margin-bottom: 10%;
 }
 
 .bullets{
