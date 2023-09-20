@@ -277,10 +277,6 @@ section.depoiments {
     flex-direction: column;
 }
 
-.container{
-    /* background-color: white; */
-}
-
 /* .box{
     /* display: none;
     position: relative; *
@@ -350,6 +346,15 @@ section.depoiments {
     align-items: center;
     text-align: center;
     border-radius: 20px;
+}
+
+.stars{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .container .deps p{
