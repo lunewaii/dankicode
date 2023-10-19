@@ -398,6 +398,8 @@ section.depoiments {
 /* ---------------- */
 
 section.contato{
+    display: inline-block;
+    width: 100%;
     padding: 10%;
     text-align: center;
     background-color: #766B6E;
@@ -405,6 +407,45 @@ section.contato{
 
 section.contato h1{
     font-size: 50px;
+    margin-bottom: 5%;
+}
+
+section.contato form{
+    width: 100%;
+}
+
+.contato input[type=text],
+.contato input[type=email]{
+    /* display: list-item; */
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    width: 100%;
+    max-width: 850px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: white;
+    padding-left: 10px;
+}
+
+.contato textarea{
+    /* display: list-item; */
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    width: 100%;
+    max-width: 850px;
+    height: 120px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: white;
+    padding-left: 10px;
+}
+
+.contato input[type=submit]{
+    background-color: #72D6CA;
+    padding: 0.8%;
+    border-radius: 10px;
+    color: #766B6E;
 }
 
 @media screen and (max-width: 800px) {
