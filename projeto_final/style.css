@@ -261,14 +261,14 @@ section.depoiments {
     display: flexbox;
 }
 
-.th1 h1{
+.th1 h1 {
     color: white;
     font-size: 50px;
     padding-top: 7%;
     margin-left: 10%;
 }
 
-.boxes{
+.boxes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +317,7 @@ section.depoiments {
 
 
 
-.tudo{
+.tudo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,14 +326,15 @@ section.depoiments {
     flex-direction: column;
 }
 
-.container{
+.container {
     position: relative;
-    margin: 0 auto;  /*alinhou horizontalmente! */
+    margin: 0 auto;
+    /*alinhou horizontalmente! */
     height: 500px;
     width: 500px;
 }
 
-.container .deps{
+.container .deps {
     position: absolute;
     padding: 10%;
     left: 0;
@@ -348,7 +349,7 @@ section.depoiments {
     border-radius: 20px;
 }
 
-.stars{
+.stars {
     /* background-color: red; */
     position: absolute;
     bottom: 20%;
@@ -357,31 +358,31 @@ section.depoiments {
     right: 0;
 }
 
-.container .deps p{
+.container .deps p {
     color: black;
 }
 
-.container .deps h2{
+.container .deps h2 {
     color: #766B6E;
 }
 
-.container .deps h3{
+.container .deps h3 {
     color: #766B6E;
 }
 
-.pfp{
+.pfp {
     /* padding: 10%; */
     min-width: 30%;
     min-height: 30%;
     margin-bottom: 10%;
 }
 
-.bullets{
+.bullets {
     text-align: center;
     margin-top: 10px;
 }
 
-.bullet-single{
+.bullet-single {
     margin: 0 8px;
     cursor: pointer;
     display: inline-block;
@@ -391,13 +392,13 @@ section.depoiments {
     background-color: #766B6E;
 }
 
-.active-bullet{
+.active-bullet {
     background-color: #72D6CA;
 }
 
 /* ---------------- */
 
-section.contato{
+section.contato {
     display: inline-block;
     width: 100%;
     padding: 10%;
@@ -405,17 +406,17 @@ section.contato{
     background-color: #766B6E;
 }
 
-section.contato h1{
+section.contato h1 {
     font-size: 50px;
     margin-bottom: 5%;
 }
 
-section.contato form{
+section.contato form {
     width: 100%;
 }
 
 .contato input[type=text],
-.contato input[type=email]{
+.contato input[type=email] {
     /* display: list-item; */
     font-family: 'EB Garamond', serif;
     font-size: 18px;
@@ -428,7 +429,7 @@ section.contato form{
     padding-left: 10px;
 }
 
-.contato textarea{
+.contato textarea {
     font-family: 'EB Garamond', serif;
     font-size: 18px;
     width: 100%;
@@ -440,7 +441,7 @@ section.contato form{
     padding-left: 10px;
 }
 
-.contato input[type=submit]{
+.contato input[type=submit] {
     background-color: #72D6CA;
     padding: 0.8%;
     border-radius: 10px;
