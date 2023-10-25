@@ -163,7 +163,8 @@ section.porques>.inner>p {
 }
 
 section.start {
-    background-image: url('images/bg-grey.jpg');
+    /* background-image: url('images/bg-grey.jpg'); */
+    background-color: #696969;
     background-position: center;
     padding: 8%;
     /* height: 50vh; */
@@ -256,7 +257,8 @@ section.benefits {
 
 section.depoiments {
     /* background-color: red; */
-    background-image: url('images/bg-grey.jpg');
+    /* background-image: url('images/bg-grey.jpg'); */
+    background-color: #696969;
     background-position: center;
     display: flexbox;
 }
@@ -389,7 +391,7 @@ section.depoiments {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: #766B6E;
+    background-color: black;
 }
 
 .active-bullet {
