@@ -401,10 +401,11 @@ section.depoiments {
 /* ---------------- */
 
 section.contato {
-    display: inline-block;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
     width: 100%;
     padding: 10%;
-    text-align: center;
     background-color: #766B6E;
 }
 
